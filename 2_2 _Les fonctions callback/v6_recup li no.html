@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="style.css">
+  
+
+</head>
+<body>
+<ul>
+  <li>Li 1</li>
+  <li>Li 2</li>
+  <li>Li 3</li>
+</ul>
+
+<script>
+
+// Si on a envie à présent d'appeler le innerHtml
+// de local_cpt
+
+var elements = document.getElementsByTagName('li');
+
+for(var i=0;i<elements.length;i++){
+  elements[i].addEventListener('click',
+(function(local_cpt){
+    return function(){
+      console.log(elements[local_cpt].innerText);
+    }
+  })(i));
+} 
+
+// Console = ns avons bien nos Li 1, Li 2, Li 3 qui sont appelés 
+</script>
+</body>
+</html> 

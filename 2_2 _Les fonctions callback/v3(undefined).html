@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="style.css">
+  
+
+</head>
+<body>
+<ul>
+  <li>Li 1</li>
+  <li>Li 2</li>
+  <li>Li 3</li>
+</ul>
+
+<script>var elements = document.getElementsByTagName('li');
+
+for(var i=0;i<elements.length;i++){
+  // Ns pouvons à présent pouvoir rajouter un event listener
+  // En souhaitant travailler sur l'événement click et prévoir pour cela le callback
+  elements[i].addEventListener('click',function(){
+  // Ns allons justement afficher la valeur du innerHtml (ou même l'élément lui même)
+    console.log(elements[i]);
+ });
+ }
+
+ // Dans la console = c'est, "undefined", nous laissant penser que
+ // i n'est pas la bonne valeur
+
+</script>
+</body>
+</html> 
