@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="style.css">
+  
+
+</head>
+<body>
+
+<script>
+
+// Ns voulons ici faire une fonction anonyme (auto-appelante = anonyme)
+// Dc pas de nom car de fait pas appellée
+// Mise entre parenthèse pour imposer l'éxécution de cette fonction -> la prioriser
+// cad pour éxécuter la totalité du code contenu entre les parenthéses
+
+(function (str){
+    console.log('Hello '+str);
+})('world');
+
+// Console = Hello world
+// Mais Hello undefined si ns ne définissons pas str
+// dans la paire de parenthèse
+</script>
+</body>
+</html>   
