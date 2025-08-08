@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="style.css">
+  
+
+</head>
+<body>
+
+
+<script>
+
+  // Le hoisting ne s'applique pas aux fonctions déclarées avec le mot clé function directement
+  // non plus sur une fonction anonyme mais sur une fonction nommée (function doSomething)
+
+doSomething();
+
+function doSomething(){
+console.log("Hello");
+}
+ 
+// Console = Hello
+// J'appelle doSomething avant de l'avoir déclaré 
+// Le hoisting ne s'applique pas, j'appelle bien la fonction
+
+</script>
+</body>
+</html> 

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="style.css">
+  
+
+</head>
+<body>
+
+
+<script>
+// Le hoisting pour les fonctions déclaration sous forme de variable
+// Ds cet exemple-là si j'appelle doSomething avant...
+
+doSomething();
+
+var doSomething = function(){
+console.log("Hello");
+}
+
+// Console = "doSomething" n'est pas une fonction, doSomething est déclaré mais n'est pas une 
+// fonction. Les fonctions sont typées et on le même comportement qu'une variable.
+// Et le hoisting s'applique aussi aux fonctions déclarées de cette façon-là.
+
+</script>
+</body>
+</html> 
