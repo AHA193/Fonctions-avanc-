@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="style.css">
+  
+
+</head>
+<body>
+
+
+<script>
+function mult(a){
+
+	function multBy2(c){
+	return c*2;
+	}
+	
+return multBy2(a);
+}
+
+var d = multBy2(4); // multBy2 n'est pas accessible ici
+var c = mult(2);
+ console.log(c);
+ console.log(d);
+
+// Console = multBy2 is not defined
+</script>
+</body>
+</html> 

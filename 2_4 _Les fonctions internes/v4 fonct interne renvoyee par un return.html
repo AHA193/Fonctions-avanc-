@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="style.css">
+  
+
+</head>
+<body>
+
+
+<script>
+  // Utilisation des fonctions internes, qui sont renvoyées
+  // directement par la fonction principale
+  // ..Faisant ici par ex le travail de la multiplication par 2
+
+function mult(a){
+	return function(c){
+	return c*2;
+	}
+}
+
+var c = mult(2);
+var result = c(3)
+ console.log(result);
+
+// Console = 6, car au lieu de renvoyer une valeur calculée 
+// par une fonction, ns renvoyons une fonction
+// Et donc cette fonction comme n'importe quelle variable
+// est appellable avec une paire de parenthèse et des paramétres.
+
+</script>
+</body>
+</html> 
