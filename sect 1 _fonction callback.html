@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Titre de la page</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<script>
+var show = function(a){
+console.log("show "+a);
+}
+function sum(a,b,affiche){
+var c = a+b;
+affiche(c);
+return c;
+}
+var c = sum(2,3,show);
+console.log(c)
+
+// sur la console =
+// show 5 (code éxécuté de la méthode show appelé affiche ds la somme)
+// 5 (le console point log de c)
+
+</script>
+</body>
+</html> 
